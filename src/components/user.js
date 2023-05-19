@@ -8,7 +8,7 @@ export default function User({image,email,name}) {
   <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
     <blockquote>
       <p class="text-md font-medium">
-        “Tailwind CSS is the only framework that I've seen scale
+        Tailwind CSS is the only framework that I have seen scale
       </p>
     </blockquote>
     <figcaption class="font-medium">

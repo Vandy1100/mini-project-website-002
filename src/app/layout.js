@@ -3,6 +3,7 @@ import Footer from '@/components/footer'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import Carousel from '@/components/carousel'
+import { SCRIPT_DATA } from '@/utils/constant'
 
 export const metadata = {
   title: 'Create Next App',
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
       <Carousel/>
       {children}
       <Footer/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+      <script src={SCRIPT_DATA} async/>
       </body>
     </html>
   )
