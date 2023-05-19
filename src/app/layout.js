@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <Carousel/>
       {children}
       <Footer/>
-      {/* <script src={SCRIPT_DATA} /> */}
+      <script src={SCRIPT_DATA} />
       </body>
     </html>
   )
