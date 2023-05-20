@@ -25,7 +25,7 @@ export default async function Home() {
   const products = await getProduct();
   const users = await getUser();
   const categories = await getCategory();
-  console.log(categories);
+  console.log(products);
 
   return (
     <>
