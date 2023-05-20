@@ -3,7 +3,7 @@ import Footer from '@/components/footer'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import Carousel from '@/components/carousel'
-// import { SCRIPT_DATA } from '@/utils/constant'
+import { SCRIPT_DATA } from '@/utils/constant'
 
 export const metadata = {
   title: 'Create Next App',
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <Carousel/>
       {children}
       <Footer/>
-    
+      <script src={SCRIPT_DATA} />
       </body>
     </html>
   )
