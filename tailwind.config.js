@@ -6,6 +6,11 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     "./node_modules/flowbite/**/*.js",
   ],
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ],
   theme: {
     extend: {
       
@@ -13,6 +18,7 @@ module.exports = {
     
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('taos/plugin')
   ],
 }

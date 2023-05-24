@@ -6,6 +6,27 @@ export async function getProduct(id) {
   });
   return res.json();
 }
+export async function generateMetadata({params}){
+  const product=await getProduct(params.id)
+  return{
+    title:product.title,
+    description:product.description,
+    thumbnail:product.images[0],
+    metadataBase: new URL('https://findtopia.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'de-DE': '/de-DE',
+    },
+  },
+  openGraph: {
+    title:product.title,
+    description:product.description,
+    thumbnail:product.images[0]
+  },
+  }
+}
 
 export default async function page({ params }) {
   const product = await getProduct(params.id);

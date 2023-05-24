@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Product({title,image,price,id,description}) {
   return (
     <>    
-<div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+<div class="mx-auto  mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg " data-aos="flip-right">
   <img class="h-48 w-full object-cover object-center" src={image} alt={title} />
   <div class="p-4">
     <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">{title}</h2>

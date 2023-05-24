@@ -30,7 +30,7 @@ export default async function Home() {
   return (
     <>
       <main className="grid grid-cols-3 gap-4">
-        <div className="flex gap-3  justify-center col-span-2 min-h-min flex-row flex-wrap ps-10 p-2">
+        <div className="flex gap-3  justify-center col-span-2 min-h-min flex-row flex-wrap ps-10 p-2 ">
           {products.map((product, index) => (
             <Product
             id={product.id}
